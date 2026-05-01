@@ -1,3 +1,4 @@
+import CampoInput from "@/componets/CampoInput";
 import { Text, View, StyleSheet } from "react-native";
 
 export default function () {
@@ -7,6 +8,7 @@ export default function () {
     <View style={styles.container} >
       <Text style={styles.titulo}>ola</Text>
       <Text style={styles.titulo}>ola mundo</Text>
+      <CampoInput/>
     </View>
 
   )
