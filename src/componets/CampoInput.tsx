@@ -13,7 +13,7 @@ export default function CampoInput({label, placeholder, mensagem} : CampoInputPr
 
 
   return (
-    <View style={styles.form}>
+    <View style={styles.containerInput}>
       <Text style={styles.label}>{label}</Text>
       <TextInput style={styles.input} placeholder={placeholder} />
       <Text style={styles.mensagem}>{mensagem}</Text>
@@ -24,22 +24,25 @@ export default function CampoInput({label, placeholder, mensagem} : CampoInputPr
 
 const styles = StyleSheet.create({
 
-  form: {
+  containerInput: {
     width: "100%"
   },
 
   label: {
-    fontSize: 20
+    fontSize: 25
   },
 
   input: {
     borderWidth: 1,
-    borderColor: "#5a5a5a",
+    borderColor: "#585858",
+    borderRadius:10,
+    fontSize:20,
 
   },
 
   mensagem:{
     color:"red"
+    
   }
 
 })
