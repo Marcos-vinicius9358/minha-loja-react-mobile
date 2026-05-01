@@ -7,7 +7,7 @@ interface BotaoProps{
 
 export default function Botao({children} : BotaoProps){
     return(
-<TouchableOpacity style={styles.botao}>{children}</TouchableOpacity>
+<TouchableOpacity style={styles.botao}><Text>{children}</Text></TouchableOpacity>
     )
 }
 
