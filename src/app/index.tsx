@@ -6,9 +6,10 @@ export default function () {
 
   return (
     <View style={styles.container} >
-      <Text style={styles.titulo}>ola</Text>
-      <Text style={styles.titulo}>ola mundo</Text>
-      <CampoInput/>
+      <CampoInput label="Nome" placeholder="Primeiro nome" mensagem="erro"/>
+      <CampoInput label="Email" placeholder="Email" mensagem="erro"/>
+      <CampoInput label="Senha" placeholder="senha" mensagem="erro"/>
+      <CampoInput label="senha" placeholder="confirma senha" mensagem="erro"/>
     </View>
 
   )
@@ -22,10 +23,8 @@ export default function () {
       flex:1,
       justifyContent:"center",
       alignItems:"center",
-      backgroundColor:"#000",
+      backgroundColor:"#fff",
+      padding:15,
     },
-    titulo:{
-      fontSize:20,
-      color:"#ff0000",
-    }
+   
   })
