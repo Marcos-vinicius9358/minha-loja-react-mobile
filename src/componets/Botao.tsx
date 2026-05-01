@@ -1,4 +1,4 @@
-import { Children, ReactNode } from "react"
+import { ReactNode } from "react"
 import { Text, TouchableOpacity, StyleSheet} from "react-native"
 
 interface BotaoProps{
@@ -7,7 +7,7 @@ interface BotaoProps{
 
 export default function Botao({children} : BotaoProps){
     return(
-<TouchableOpacity style={styles.botao}><Text>{children}</Text></TouchableOpacity>
+<TouchableOpacity style={styles.botao}>{children}</TouchableOpacity>
     )
 }
 
